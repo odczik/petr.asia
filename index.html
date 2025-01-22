@@ -24,11 +24,29 @@
             right: 0;
             height: 100vh;
         }
+        @keyframes rotate {
+            from {
+            transform: rotate(0deg);
+            }
+            to {
+            transform: rotate(360deg);
+            }
+        }
+        #main{
+            animation: rotate 5s infinite linear;
+        }
+        #main{
+            position: absolute;
+            width: 100vw;
+            height: 100vh;
+        }
     </style>
 </head>
 <body>
-    <h1>Le Pan Tau</h1>
-    <img id="petr1" src="petr_cert.png" alt="cert petr">
-    <img id="petr2" src="petrik_veprik.png" alt="petr">
+    <main id="main">
+        <h1>Le Pan Tau</h1>
+        <img id="petr1" src="petr_cert.png" alt="cert petr">
+        <img id="petr2" src="petrik_veprik.png" alt="petr">
+    </main>
 </body>
 </html>
