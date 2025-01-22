@@ -23,6 +23,7 @@
             position: absolute;
             right: 0;
             height: 100vh;
+            bottom: -20px;
         }
         @keyframes rotate {
             from {
@@ -33,7 +34,7 @@
             }
         }
         #main{
-            animation: rotate 5s infinite linear;
+            animation: rotate 5s infinite cubic-bezier(0.6, -0.28, 0.74, 0.05);
         }
         #main{
             position: absolute;
